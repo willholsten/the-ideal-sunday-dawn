@@ -16,6 +16,18 @@
       },
       {
         "type": "color",
+        "id": "colors_announcement_bar",
+        "default": "#FFFFFF",
+        "label": "Announcement bar"
+      },
+      {
+        "type": "color",
+        "id": "colors_announcement_bar_text",
+        "default": "#000000",
+        "label": "Announcement bar text"
+      },
+      {
+        "type": "color",
         "id": "colors_solid_button_labels",
         "default": "#FFFFFF",
         "label": "t:settings_schema.colors.settings.colors_solid_button_labels.label",

@@ -1,0 +1,34 @@
+{%- assign announcement_block_count = 0 -%}
+{% for block in section.blocks %}
+    {%- if block.type == 'announcement' -%}
+        {%- assign announcement_block_count = announcement_block_count | plus: 1 -%}
+    {%- endif -%}
+{% endfor %}
+
+<div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+    <div class="swiper announcement-bar-swiper">
+        <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                    {%- when 'announcement' -%}
+                        <div class="announcement-bar-message swiper-slide">
+                            {%- if block.settings.link != blank -%}
+                                <a class="announcement-link" href="{{ block.settings.link }}">
+                                {%- endif -%}
+                                {%- if block.settings.text != blank -%}
+                                    <span class="announcement-text">{{ block.settings.text }}</span>
+                                {%- endif -%}
+                                {%- if block.settings.link_text != blank -%}
+                                    <span class="announcement-link-text">{{ block.settings.link_text }}</span>
+                                {%- endif -%}
+                                {%- if block.settings.link != blank -%}
+                                </a>
+                            {%- endif -%}
+                        </div>
+                {%- endcase -%}
+            {%- endfor -%}
+        </div>
+        <div class="swiper-button-prev slider-button slider-button--prev">{% render 'icon-caret' %}</div>
+        <div class="swiper-button-next slider-button slider-button--next">{% render 'icon-caret' %}</div>
+    </div>
+</div>

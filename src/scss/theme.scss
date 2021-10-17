@@ -1,0 +1,19 @@
+
+// Mixins
+@import 'mixins/breakpoints'; 
+
+// Partials
+@import 'partials/variables'; 
+@import 'partials/base'; 
+@import 'partials/type'; 
+
+
+
+// Plugins
+@import 'plugins/swiper.min'; 
+
+// sections
+
+ @import 'sections/header';
+ @import 'sections/announcement-bar';
+

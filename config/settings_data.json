@@ -1,5 +1,7 @@
 {
   "current": {
+    "colors_announcement_bar": "#ffee6e",
+    "colors_announcement_bar_text": "#1e1e95",
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
@@ -7,25 +9,87 @@
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#FFFFFF",
     "colors_background_2": "#F3F3F3",
-    "type_header_font": "assistant_n4",
-    "type_body_font": "assistant_n4",
+    "type_header_font": "sans-serif",
+    "type_body_font": "sans-serif",
+    "colors_announcement_text": "#000000",
     "sections": {
-      "announcement-bar": {
-        "type": "announcement-bar",
+      "header": {
+        "type": "header",
         "blocks": {
-          "announcement-bar-0": {
+          "8714d8de-1c36-4c5a-80e5-fb474be91ff5": {
             "type": "announcement",
             "settings": {
-              "color_scheme": "background-1"
+              "text": "We Plant a tree",
+              "link_text": "for every order",
+              "link": "shopify:\/\/pages\/tree-planting"
+            }
+          },
+          "19bf13ec-2e34-433c-8049-34c032bf4cfd": {
+            "type": "announcement",
+            "settings": {
+              "text": "Free delivery",
+              "link_text": "over £40",
+              "link": ""
+            }
+          },
+          "8e9c1950-88ea-4cf0-87ea-7a4a64b081af": {
+            "type": "announcement",
+            "settings": {
+              "text": "Refer a friend",
+              "link_text": "and both save £10",
+              "link": ""
             }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "8714d8de-1c36-4c5a-80e5-fb474be91ff5",
+          "19bf13ec-2e34-433c-8049-34c032bf4cfd",
+          "8e9c1950-88ea-4cf0-87ea-7a4a64b081af"
         ],
-        "settings": {}
+        "settings": {
+          "announcement_above_header": false,
+          "color_scheme": "background-1",
+          "logo_width": 100,
+          "logo_position": "top-left",
+          "menu": "header-menu",
+          "show_line_separator": false,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "text",
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
+        }
       }
-    }
+    },
+    "content_for_index": []
   },
   "presets": {
     "Default": {

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Cocogoose";
+    src: url('Cocogoose-Pro-Regular.woff2') format("woff2");
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "Cocogoose";
+    src: url('Cocogoose-Pro-Light.woff2') format("woff2");
+    font-style: normal;
+    font-weight: 400; 
+  }
