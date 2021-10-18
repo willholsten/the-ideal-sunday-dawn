@@ -1,5 +1,5 @@
 .announcement-bar {
-    background-color: var(--color-announcement-bar);
+    background-color: #F6F6FC;
     text-align: center;
     padding: 10px 0;
     color: var(--color-announcement-bar-text);
@@ -13,8 +13,10 @@
     .announcement-bar-message {
         display: flex;
         justify-content: center;
+        font-size: $typeBaseSmallSize;
         width: 100%;
         max-width: 100%;
+        text-transform: uppercase;
     }
 
     .announcement-link {
@@ -24,8 +26,7 @@
     }
 
     .announcement-text {
-        font-weight: $fontWeightBold;
-        text-transform: uppercase;
+        font-weight: $typeWeightBold;
     }
 
     .announcement-link-text {
@@ -34,11 +35,11 @@
 
     .swiper-button-prev {
         left: 0;
-        background: $colorYellow;
+        background: #F6F6FC;
     }
     .swiper-button-next {
         right: 0;
-        background: $colorYellow;
+        background: #F6F6FC
     }
     .swiper-button-prev:after,
     .swiper-button-next:after {

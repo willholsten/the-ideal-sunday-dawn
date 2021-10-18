@@ -1,33 +1,39 @@
 
 .h1,h1{
     font-size:calc($typeHeaderSize*0.75);
-    font-weight: $fontWeightBold;
+    font-weight: $typeWeightBold;
     letter-spacing: $typeHeaderSpacing;
+    color: $colorBase;
   }
   
   .h2,h2{
     font-size:calc($typeHeaderSize*0.73);
-    font-weight: $fontWeightBold;
+    font-weight: $typeWeightBold;
     letter-spacing: $typeHeaderSpacing;
+    color: $colorBase;
   }
   
   .h3,h3{
     font-size:calc($typeHeaderSize*0.45);
-    font-weight: $fontWeightBold;
+    font-weight: $typeWeightBold;
     letter-spacing: $typeHeaderSpacing;
+    color: $colorBase;
   }
   
   .h4,h4{
     font-size:calc($typeHeaderSize*0.3);
-    font-weight: $fontWeightBold;
+    font-weight: $typeWeightBold;
     letter-spacing: 2.5px;
+    color: $colorBase;
   }
 
-  p,
-  a,
-  span,
-  li {
+  p {
       font-size: $typeBaseSize;
+  }
+
+  a {
+    text-decoration: none;
+    color: $colorBase;
   }
 
   @include md {

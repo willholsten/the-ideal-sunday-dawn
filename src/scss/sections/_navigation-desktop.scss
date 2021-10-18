@@ -1,0 +1,33 @@
+.header__primary-menu {
+    position: relative;
+    border-top: 1px solid $colorBorder;
+
+    details-disclosure>details {
+        position: unset;
+    }
+
+    summary.list-menu__item {
+        padding: 12px;
+    }
+
+    li {
+        font-size: $typeBaseSmallSize;
+        text-transform: uppercase;
+    }
+
+    .header__inline-menu details[open]>.header__submenu {
+        z-index: 10;;
+    }
+
+    .header__mega-menu {
+        position: absolute;
+        left: 0;
+        width: 100vw;
+
+        .page-width {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+    }
+}

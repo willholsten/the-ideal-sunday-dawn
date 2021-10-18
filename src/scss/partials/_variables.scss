@@ -1,17 +1,18 @@
 
 // Colours
-$colorHeader: var(----color-base-text);
-$colorBase: vaar(----color-base-text);
+$colorHeader: #1e1e95;
+$colorBase: #1e1e95;
 $colorYellow: #FFEE6E;
+$colorBorder: #eee;
 
-$typeHeaderSize: 54px;
+$typeHeaderSize: 45px;
 $typeBaseSize: 14px;
 $typeBaseSmallSize: 12px;
 
-$typeHeaderSpacing: -1px;
+$typeHeaderSpacing: -1.5px;
 
-$fontWeightBold: 700;
-$fontWeightNormal: 400;
+$typeWeightBold: 700;
+$typeWeightNormal: 400;
 
 
 $screen-md-min: 750px;

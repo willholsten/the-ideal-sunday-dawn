@@ -1,0 +1,48 @@
+.header {
+    .header__logo-wordmark.h2 {
+        font-size: 30px;
+    }
+
+    &:not(.header--middle-left) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    
+    @include lg {
+        &:not(.header--middle-left) .header__inline-menu  {   
+            margin: 0;
+        }
+    }
+    
+    .header__logo-menu-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        @include lg {
+            justify-content: flex-start;
+        }
+    
+        .header__secondary-menu {
+            display: none;
+            list-style-type: none;
+            padding-left: 20px;
+            margin: 0;
+    
+            @include lg {
+                display: flex;
+            }
+    
+            li {       
+                padding: 0 20px;
+                list-style-type: none;
+    
+                a {
+                    font-size: $typeBaseSmallSize;
+                    font-weight: $typeWeightBold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
